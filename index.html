@@ -1,43 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Personal Website - Home</title>
-  <meta name="description" content="Welcome to my personal website">
-  <meta name="keywords" content="Personal, Portfolio, Developer">
+  <title>Nguyễn Đình Khánh Ngân - Personal Portfolio</title>
+  <meta name="description"
+    content="Welcome to my personal portfolio website - showcasing my projects and skills in web development">
+  <meta name="keywords" content="Portfolio, Developer, Projects, Web Development, Khánh Ngân">
   <link rel="icon" type="image/x-icon" href="./cat-icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <h1>Welcome to My Personal Website</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="frame.html">Frame Demo</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1>
+        <a href="index.html" class="logo">Khánh Ngân</a>
+      </h1>
+      <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="frame.html">Frame Demo</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>Introduction</h2>
-      <p>This is my personal website where I share my projects, experiences, and contact details.</p>
-    </section>
-  </main>
-  
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Nguyễn Đình Khánh Ngân</p>
-      <p>
-        <a href="https://github.com/FanchonSora">GitHub</a> |
-        <a href="https://www.linkedin.com/in/fanchonsora/">LinkedIn</a> |
-        <a href="mailto:khanhngan1491@com">Email</a>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Creative Space</h2>
+      <p>I'm a passionate developer focused on creating beautiful and functional web experiences that make a difference.
       </p>
+      <div class="hero-buttons">
+        <a href="portfolio.html" class="view-details">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="contact.html" class="contact-me">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+        <p>A brief introduction to who I am and what I do</p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Introduction</h3>
+          <p>Currently, I’m conducting research in Machine Learning with a focus on Computer Vision. I’ve contributed to
+            projects involving image recognition, object classification, and real-time video processing, using
+            frameworks such as TensorFlow, PyTorch, and OpenCV.</p>
+          <p>My workflow combines writing clean, maintainable code, designing intuitive user interfaces, and applying
+            innovative solutions to build web experiences that are both visually appealing and high-performance. I’m
+            constantly learning and exploring new technologies to sharpen my skills and deliver maximum value to every
+            project.</p>
+          <p><strong>Key Skills:</strong></p>
+          <ul>
+            <li>Languages: Python, JavaScript (ES6+), TypeScript, Java</li>
+            <li>Frameworks: Flask, Django, React.js, Next.js</li>
+            <li>Machine Learning & Computer Vision: TensorFlow, PyTorch, OpenCV, YOLO</li>
+            <li>Databases: MongoDB, PostgreSQL, MySQL</li>
+            <li>DevOps & Tools: Docker, Git, CI/CD, AWS</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-title" style="margin-top: 60px;">
+      <h2>My Skills</h2>
+      <p>Technologies and tools I work with</p>
+    </div>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-python"></i>
+        </div>
+        <h4 class="skill-title">Python</h4>
+        <p class="skill-description">Expert in writing clean, maintainable code for data processing, automation, and
+          backend services.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h4 class="skill-title">Machine Learning & CV</h4>
+        <p class="skill-description">Building and deploying models for image recognition, object detection, and
+          real-time video analysis using TensorFlow, PyTorch, and OpenCV.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-react"></i>
+        </div>
+        <h4 class="skill-title">Frontend Development</h4>
+        <p class="skill-description">Developing dynamic, responsive user interfaces with React.js and Next.js for
+          seamless UX.</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h4 class="skill-title">Databases & DevOps</h4>
+        <p class="skill-description">Designing and managing MongoDB/PostgreSQL schemas; containerizing applications with
+          Docker, setting up CI/CD pipelines on AWS.</p>
+      </div>
+
+    </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Khánh Ngân</div>
+        <p class="footer-text">Thank you for visiting my portfolio. I'm always open to discussing new projects, creative
+          ideas or opportunities to be part of your vision.</p>
+
+        <div class="social-links">
+          <a href="https://github.com/FanchonSora"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/fanchonsora/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:khanhngan1491@com"><i class="fas fa-envelope"></i> Email Me</a>
+        </div>
+
+        <p class="copyright">&copy; 2025 Nguyễn Đình Khánh Ngân. All rights reserved.</p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.innerHTML = navMenu.classList.contains('active')
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close menu when clicking on a nav link (mobile)
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navMenu.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+
+    // Simple scroll animation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const target = document.querySelector(targetId);
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 100,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

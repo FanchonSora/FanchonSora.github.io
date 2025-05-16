@@ -1,119 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nguyễn Đình Khánh Ngân | Junior Frontend Developer</title>
-  <!-- SEO Meta -->
-  <meta name="description" content="Personal CV Nguyễn Đình Khánh Ngân">
-  <meta name="keywords" content="Machine learning engineers">
-  <meta name="author" content="Nguyễn Đình Khánh Ngân">
-  <!-- Open Graph Meta -->
-  <meta property="og:title" content="Nguyễn Đình Khánh Ngân | Machine learning engineer">
-  <meta property="og:description" content="Personal CV Nguyễn Đình Khánh Ngân">
-  <meta property="og:image" content="https://www.linkedin.com/in/fanchonsora/">
-  <meta property="og:url" content="https://github.com/FanchonSora">
-  <meta property="og:type" content="website">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="x-icon" href="cat-icon.jpg">
-
-  <!-- External CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nguyễn Đình Khánh Ngân | Machine Learning Engineer</title>
+  <meta name="description" content="CV & Portfolio of Nguyễn Đình Khánh Ngân – Machine Learning Engineer and Full-Stack Developer">
+  <link rel="icon" type="image/x-icon" href="cat-icon.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <h1>About Me</h1>
+  <header>
+    <div class="container header-container">
+      <h1><a href="index.html" class="logo">Khánh Ngân</a></h1>
+      <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
       <nav>
-        <ul>
+        <ul id="navMenu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="about.html" class="active">About Me</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="frame.html">Frame Demo</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="intro">
-        <div class="header-content">
-          <div class="header-text">
-            <h1>Nguyễn Đình Khánh Ngân</h1>
-            <h2>Junior Machine Learning Developer</h2>
-            <address>
-              Origami S10.05, Nguyen Xien Street<br>
-              Ho Chi Minh City<br>
-              (+84) 399201545<br>
-              <a href="mailto:khanhngan1491@.com">khanhngan1491@com</a>
-            </address>
+  <div class="page-title">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>Machine Learning Engineer & Full-Stack Developer</p>
+    </div>
+  </div>
+
+  <div class="cv-container container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile-section">
+        <h2 class="profile-name">Nguyễn Đình Khánh Ngân</h2>
+        <p class="profile-title">Machine Learning Engineer</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h2><i class="fas fa-bullseye"></i> OBJECTIVE</h2>
+        <p>Seeking a chance to gain practical experience in software development teams in order to hone my problem-solving
+          and teamwork skills. I want to contribute to scalable, well-structured software architectures and strengthen
+          both my programming mindset and system design abilities.</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h2><i class="fas fa-address-card"></i> CONTACT</h2>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone"></i> +84 399 201 545</li>
+          <li><i class="fas fa-envelope"></i> khanhngan1491@com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Apt S10.05, Long Bình, Thủ Đức, HCMC</li>
+          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/fanchonsora/" target="_blank">linkedin.com/in/fanchonsora</a></li>
+          <li><i class="fab fa-github"></i> <a href="https://github.com/FanchonSora" target="_blank">github.com/FanchonSora</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h2><i class="fas fa-graduation-cap"></i> EDUCATION</h2>
+        <div class="education-item">
+          <h3>International University HCMC</h3>
+          <p class="degree">B.Sc. Computer Science</p>
+          <p class="edu-details">2022–2026 | GPA: 3.25</p>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2><i class="fas fa-code"></i> PROGRAMMING SKILLS</h2>
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>C/C++</span>
+            <span>Python</span>
           </div>
-          <div class="header-image">
-            <img src="./profile.jpg" alt="Profile Image">
+        </div>
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>RESTful APIs</span>
+            <span>MERN</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>ML & AI</h3>
+          <div class="skill-tags">
+            <span>PyTorch</span>
+            <span>TensorFlow</span>
+            <span>scikit-learn</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Database</h3>
+          <div class="skill-tags">
+            <span>MySQL</span>
+            <span>Firebase</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Other</h3>
+          <div class="skill-tags">
+            <span>OOP</span>
+            <span>DSA</span>
+            <span>Agile/Scrum</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h2><i class="fas fa-user-plus"></i> SOFT SKILLS</h2>
+        <div class="soft-skills">
+          <div class="soft-skill-item">
+            <div class="skill-label">Team Collaboration</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="skill-label">Self-Learning</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="skill-label">Project Management</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 80%"></div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="skill-label">Presentation</div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <section id="about-me" class="content-section">
+        <h2 class="section-title"><i class="fas fa-user"></i> ABOUT ME</h2>
+        <div class="about-content">
+          <p>I am a dedicated Computer Science student with a passion for Machine Learning and Full-Stack Development. My academic journey has equipped me with a strong foundation in algorithms, data structures, and software engineering principles, while my personal projects have allowed me to apply these concepts to real-world problems.</p>
+          <p>My technical interests lie at the intersection of AI and web technologies, where I enjoy building intelligent systems with intuitive interfaces. I am particularly fascinated by natural language processing and computer vision applications that can enhance user experiences.</p>
+          <p>Outside of coding, I enjoy participating in hackathons, contributing to open-source projects, and staying updated with the latest technological advancements in the field of artificial intelligence.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <h2 class="section-title"><i class="fas fa-laptop-code"></i> PROJECTS</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Finantasy Game</h3>
+              <span class="project-date">Apr 2023 – Jun 2024</span>
+            </div>
+            <p class="project-desc">Object-Oriented strategy game focused on financial education and investment simulation.</p>
+            <div class="project-details">
+              <div class="project-role">
+                <span class="detail-label">Role:</span>
+                <span class="detail-value">Full-stack Developer</span>
+              </div>
+              <div class="project-tech">
+                <span class="detail-label">Technologies:</span>
+                <div class="tech-tags">
+                  <span>Java</span>
+                  <span>Adobe</span>
+                  <span>OOP</span>
+                </div>
+              </div>
+              <div class="project-team">
+                <span class="detail-label">Team Size:</span>
+                <span class="detail-value">3 members</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Game Management System</h3>
+              <span class="project-date">Sep 2023 – Oct 2024</span>
+            </div>
+            <p class="project-desc">Marketplace platform connecting game developers with players, featuring user authentication, game listings, and reviews.</p>
+            <div class="project-details">
+              <div class="project-role">
+                <span class="detail-label">Role:</span>
+                <span class="detail-value">Front-end Developer</span>
+              </div>
+              <div class="project-tech">
+                <span class="detail-label">Technologies:</span>
+                <div class="tech-tags">
+                  <span>React.js</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="project-team">
+                <span class="detail-label">Team Size:</span>
+                <span class="detail-value">3 members</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3>Netflix Clone</h3>
+              <span class="project-date">Sep 2023 – Oct 2024</span>
+            </div>
+            <p class="project-desc">Microservices-based streaming platform with content recommendation engine and user profiles.</p>
+            <div class="project-details">
+              <div class="project-role">
+                <span class="detail-label">Role:</span>
+                <span class="detail-value">Full-stack Developer</span>
+              </div>
+              <div class="project-tech">
+                <span class="detail-label">Technologies:</span>
+                <div class="tech-tags">
+                  <span>MongoDB</span>
+                  <span>Express.js</span>
+                  <span>React.js</span>
+                  <span>Node.js</span>
+                </div>
+              </div>
+              <div class="project-team">
+                <span class="detail-label">Team Size:</span>
+                <span class="detail-value">3 members</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- Skill Section -->
-      <section id="skill">
-        <h2>Skills</h2>
-        <p>
-          HTML, CSS, JavaScript, Python, Java, Accessibility, Figma, Responsive Web Design, Technical Writing, Presentation
-        </p>
+      <section id="achievements" class="content-section">
+        <h2 class="section-title"><i class="fas fa-trophy"></i> ACHIEVEMENTS</h2>
+        <div class="achievements-list">
+          <div class="achievement-item">
+            <div class="achievement-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Winner, Rotting Project</h3>
+              <p>Led a team in developing a scrollable LinkedIn clone during a 48-hour hackathon. Implemented real-time notifications and connection features.</p>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="achievement-content">
+              <h3>Winner, SignScript Project</h3>
+              <p>Developed an ASL-powered voice-to-text translator with computer vision capabilities. The solution improved accessibility for hearing-impaired users.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <!-- Education Section -->
-      <section id="education">
-        <h2>Education</h2>
-        <article>
-          <h3>International University, Ho Chi Minh City - Bachelor of Computer Science</h3>
-          <p>September 2023 to September 2026</p>
-          <p>List of exciting things you did at university</p>
-        </article>
-      </section>
+      <section id="ml-experience" class="content-section">
+        <h2 class="section-title"><i class="fas fa-brain"></i> MACHINE LEARNING EXPERIENCE</h2>
+        <div class="ml-projects">
+          <div class="ml-project-card">
+            <h3>Medical Description Generator</h3>
+            <p class="ml-project-desc">Trained a domain-specific transformer model to automatically generate comprehensive drug descriptions from medication names.</p>
+            <div class="ml-project-details">
+              <div class="ml-tech">
+                <span class="detail-label">Technologies:</span>
+                <div class="tech-tags">
+                  <span>Roboflow</span>
+                  <span>Pytesseract</span>
+                  <span>Python</span>
+                </div>
+              </div>
+              <div class="ml-metrics">
+                <span class="detail-label">Key Achievement:</span>
+                <span class="detail-value">Achieved 80% accuracy in classify prescription image</span>
+              </div>
+            </div>
+          </div>
 
-      <!-- Career History Section -->
-      <section id="career">
-        <h2>Career History</h2>
-        <article>
-          <h3>Devpost - Achievements</h3>
-          <ul>
-            <li>X Hackathons Level 2</li>
-            <li>Hackathon Winner Level 2</li>
-            <li>First online hackathon</li>
-            <li>Generalist</li>
-          </ul>
-        </article>
-        <article>
-          <h3>Devpost - Projects</h3>
-          <ul>
-            <li>
-              <a href="https://devpost.com/software/chill-l3wcev?_gl=1*1liubng*_gcl_au*OTk2MjAwNzI5LjE3NDA0OTQxMTA.*_ga*MjA2MTEwNTEyNi4xNzI1NTU4Mjk3*_ga_0YHJK3Y10M*MTc0MDQ5NDExMC41LjEuMTc0MDQ5NDY4Ny4wLjAuMA..">
-                Brainrot
-              </a>
-            </li>
-            <li>
-              <a href="https://devpost.com/software/signscript?_gl=1*f4nuof*_gcl_au*OTk2MjAwNzI5LjE3NDA0OTQxMTA.*_ga*MjA2MTEwNTEyNi4xNzI1NTU4Mjk3*_ga_0YHJK3Y10M*MTc0MDQ5NDExMC41LjEuMTc0MDQ5NDQxMC4wLjAuMA..">
-                Sign Script
-              </a>
-            </li>
-          </ul>
-        </article>
+          <div class="ml-project-card">
+            <h3>Game Vision</h3>
+            <p class="ml-project-desc">Built a small use for detect object</p>
+            <div class="ml-project-details">
+              <div class="ml-tech">
+                <span class="detail-label">Technologies:</span>
+                <div class="tech-tags">
+                  <span>YOLO</span>
+                  <span>Python</span>
+                  <span>OpenCV</span>
+                </div>
+              </div>
+              <div class="ml-metrics">
+                <span class="detail-label">Key Achievement:</span>
+                <span class="detail-value">Generated 10,000+ unique prescription images with 95% pass rate in authenticity evaluation</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2025 Nguyễn Đình Khánh Ngân</p>
-        <p>
-          <a href="https://github.com/FanchonSora">GitHub</a> |
-          <a href="https://www.linkedin.com/in/fanchonsora/">LinkedIn</a> |
-          <a href="mailto:khanhngan1491@com">Email</a>
-        </p>
-      </div>
-    </footer>
   </div>
+
+  <!-- <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Khánh Ngân</div>
+        <div class="social-links">
+          <a href="https://github.com/FanchonSora" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/fanchonsora/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:khanhngan1491@com"><i class="fas fa-envelope"></i> Email Me</a>
+        </div>
+        <p class="copyright">&copy; 2025 Nguyễn Đình Khánh Ngân. All rights reserved.</p>
+      </div>
+    </div>
+  </footer> -->
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.innerHTML = navMenu.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+    });
+    
+    // Close menu when clicking on a nav link (mobile)
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navMenu.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
