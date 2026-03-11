@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Frame Demo</title>
   <meta name="description" content="Demo of using iframe to embed another page">
+  <link rel="icon" type="image/x-icon" href="./cat-icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <style>
     .iframe-container {
@@ -16,32 +18,66 @@
 </head>
 <body>
   <header>
-    <h1>Frame Demo</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="frame.html">Frame Demo</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1><a href="index.html" class="logo">Khánh Ngân</a></h1>
+      <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="frame.html" class="active">Frame Demo</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section>
       <iframe src="portfolio.html" class="iframe-container" title="Portfolio"></iframe>
     </section>
   </main>
-  
-  <!-- <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Nguyễn Đình Khánh Ngân</p>
-      <p>
-        <a href="https://github.com/FanchonSora">GitHub</a> |
-        <a href="https://www.linkedin.com/in/fanchonsora/">LinkedIn</a> |
-        <a href="mailto:khanhngan1491@com">Email</a>
-      </p>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Khánh Ngân</div>
+        <p class="footer-text">Thank you for visiting my portfolio. I'm always open to discussing new projects, creative
+          ideas or opportunities to be part of your vision.</p>
+        <div class="social-links">
+          <a href="https://github.com/FanchonSora"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/fanchonsora/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="mailto:khanhngan1491@gmail.com"><i class="fas fa-envelope"></i> Email Me</a>
+        </div>
+        <p class="copyright">&copy; 2025 Nguyễn Đình Khánh Ngân. All rights reserved.</p>
+      </div>
     </div>
-  </footer> -->
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.innerHTML = navMenu.classList.contains('active')
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close menu when clicking on a nav link (mobile)
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navMenu.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+  </script>
 </body>
 </html>

@@ -1,225 +1,560 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <title>Nguyễn Đình Khánh Ngân | Portfolio</title> 
-  <meta name="description" content="Machine learning and frontend development projects by Nguyễn Đình Khánh Ngân"> 
-  <meta name="keywords" content="Machine learning, ML, Frontend, Developer, Portfolio"> 
-  <link rel="icon" type="image/x-icon" href="./cat-icon.jpg"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-  <link rel="stylesheet" href="portfolio.css"> 
-</head> 
-<body> 
-  <header> 
-    <div class="container"> 
-      <h1>Nguyễn Đình Khánh Ngân</h1> 
-      <nav> 
-        <ul> 
-          <li><a href="index.html">Home</a></li> 
-          <li><a href="about.html">About Me</a></li> 
-          <li><a href="portfolio.html">Portfolio</a></li> 
-          <li><a href="contact.html">Contact</a></li> 
-          <li><a href="frame.html">Frame Demo</a></li> 
-        </ul> 
-      </nav> 
-    </div> 
-  </header> 
-  
-  <section class="hero"> 
-    <div class="container"> 
-      <h2>My Projects</h2> 
-      <p>A showcase of my work in machine learning, web development, and game design</p> 
-    </div> 
-  </section> 
-  
-  <main> 
-    <section class="projects"> 
-      <div class="container"> 
-        <div class="projects-heading"> 
-          <h2>Featured Projects</h2> 
-          <p>Here are some of my best works across different domains of computer science</p> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Nguyễn Đình Khánh Ngân</title>
+  <meta name="description" content="Selected projects from GitHub and hackathons by Nguyễn Đình Khánh Ngân">
+  <meta name="keywords" content="Portfolio, Machine Learning, Web Development, Projects, Nguyễn Đình Khánh Ngân">
+  <link rel="icon" type="image/x-icon" href="./cat-icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1><a href="index.html" class="logo">Khánh Ngân</a></h1>
+      <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="frame.html">Frame Demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="hero-kicker">Selected work & experiments</p>
+      <h2>Projects from my GitHub & hackathons</h2>
+      <p class="hero-subtitle">
+        A mix of machine learning experiments, computer vision work, full‑stack web projects and game development. Later this page
+        can be powered by a database; for now it highlights some key repositories.
+      </p>
+      <div class="hero-actions">
+        <a href="https://github.com/FanchonSora?tab=repositories" target="_blank" class="hero-cta">
+          <i class="fab fa-github"></i>
+          View all repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="projects">
+      <div class="container">
+        <div class="projects-heading">
+          <h2>Highlighted GitHub Projects</h2>
+          <p>Static selection for now &mdash; later you can plug in a database to load more projects dynamically.</p>
         </div>
+
         <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project1.jpg" alt="RottIng LinkedIn Post Generator">
+          <!-- Event-Management -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-globe"></i> Web App</span>
+              <span class="pill-status">Side Project</span>
             </div>
-            <div class="project-info">
-              <h3>RottIng</h3>
-              <p>A supercharged app for the LinkedIn crowd that generates wild, meme-worthy, over-the-top posts with pure chaos energy.</p>
-              <div class="project-tags">
-                <span class="project-tag">AI</span>
-                <span class="project-tag">Social Media</span>
-                <span class="project-tag">JavaScript</span>
+            <h3 class="project-title">Event-Management</h3>
+            <p class="project-desc">
+              Event management platform that allows users to create, browse and keep track of upcoming events with a modern,
+              responsive UI built on TypeScript.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>TypeScript</span>
+                  <span>React / Next</span>
+                  <span>REST API</span>
+                </div>
               </div>
-              <div class="project-links">
-                <!--<a href="project-rotting.html" class="view-details">View Details</a>-->
-                <a href="https://devpost.com/software/rottg" target="_blank" class="visit-link">Live Demo</a>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Project 2 -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project2.png" alt="SignScript ASL Game">
-            </div>
-            <div class="project-info">
-              <h3>SignScript</h3>
-              <p>A typing game where users practice signing ASL alphabets with customizable time limits and word counts.</p>
-              <div class="project-tags">
-                <span class="project-tag">Accessibility</span>
-                <span class="project-tag">Game</span>
-                <span class="project-tag">Education</span>
-              </div>
-              <div class="project-links">
-                <!--<a href="project-signscript.html" class="view-details">View Details</a>-->
-                <a href="https://devpost.com/software/signscript" target="_blank" class="visit-link">Live Demo</a>
+              <div class="meta-group">
+                <span class="meta-label">Role</span>
+                <span class="meta-value">Full‑stack developer</span>
               </div>
             </div>
-          </div>
-          
-          <!-- Project 3 -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project3.png" alt="Finantasy Game">
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/Event-Management" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
             </div>
-            <div class="project-info">
-              <h3>Finantasy Game</h3>
-              <p>A strategy game set in a fantastical world that challenges players with battles and quests requiring skillful decision-making.</p>
-              <div class="project-tags">
-                <span class="project-tag">Java</span>
-                <span class="project-tag">Game Development</span>
-                <span class="project-tag">OOP</span>
-              </div>
-              <div class="project-links">
-                <!--<a href="project-finantasy.html" class="view-details">View Details</a>-->
-                <a href="https://github.com/FanchonSora/Finantasy" target="_blank" class="visit-link">GitHub</a>
-              </div>
+          </article>
+
+          <!-- V-Assistant-->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-globe"></i> Web App</span>
+              <span class="pill-status">Course Project</span>
             </div>
-          </div>
-          
-          <!-- Project 4 -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project4.jpg" alt="Game Management System">
-            </div>
-            <div class="project-info">
-              <h3>Game Management System</h3>
-              <p>A marketplace platform for users and developers to buy and sell games or game codes with profile and friend list management.</p>
-              <div class="project-tags">
-                <span class="project-tag">Front-end</span>
-                <span class="project-tag">E-commerce</span>
-                <span class="project-tag">Database</span>
+            <h3 class="project-title">V-Assistant</h3>
+            <p class="project-desc">
+              A virtual assistant application that can help users with their daily tasks and answer questions.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>ANTLR</span>
+                  <span>Speech Recognition</span>
+                </div>
               </div>
-              <div class="project-links">
-                <!--<a href="project-gms.html" class="view-details">View Details</a>-->
-                <a href="https://github.com/FanchonSora/Game-Management-System" target="_blank" class="visit-link">GitHub</a>
+              <div class="meta-group">
+                <span class="meta-label">Role</span>
+                <span class="meta-value">Full‑stack developer</span>
               </div>
             </div>
-          </div>
-          
-          <!-- Project 5 - Netflix Clone -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project-netflix.png" alt="Netflix Clone">
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/V-Assistant" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
             </div>
-            <div class="project-info">
-              <h3>Netflix Clone</h3>
-              <p>A web application with microservice architecture inspired by Netflix and MangaDex, offering users an immersive content streaming experience.</p>
-              <div class="project-tags">
-                <span class="project-tag">MERN Stack</span>
-                <span class="project-tag">Microservices</span>
-                <span class="project-tag">Full-stack</span>
-              </div>
-              <div class="project-links">
-                <!--<a href="project-netflix.html" class="view-details">View Details</a>-->
-                <a href="https://github.com/FanchonSora/netflix-clone" target="_blank" class="visit-link">GitHub</a>
-              </div>
+          </article>
+
+          <!-- DSA-Project -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-code-branch"></i> Algorithms</span>
+              <span class="pill-status">University Project</span>
             </div>
-          </div>
-          
-          <!-- Project 6 - DSA -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project6.png" alt="DSA Project">
-            </div>
-            <div class="project-info">
-              <h3>DSA Project</h3>
-              <p> The realm of Data Structures and Algorithms (DSA) plays a pivotal role in the development of efficient software systems. For our four-credit "Data Structures and Algorithms" course, which contributes to our degree, we have chosen to design and implement a problem-solving application that focuses on optimizing algorithmic performance using various data structures. This project allows us to deepen our understanding of essential concepts such as trees, graphs, dynamic programming, and sorting algorithms. Our goal is to build a system that not only performs efficiently but also adapts to varying complexities in input size and problem constraints. Through this project, we aim to improve our problem-solving and coding skills while also applying theoretical knowledge to practical scenarios. The project will challenge us to optimize solutions, analyze time and space complexity, and ultimately refine our understanding of algorithmic design. It also provides an opportunity to collaborate with peers to tackle real-world computational challenges and test our skills in a comprehensive, hands-on way.</p>
-              <div class="project-tags">
-                <span class="project-tag">Java</span>
-                <span class="project-tag">Data Structures </span>
-                <span class="project-tag">Algorithm</span>
+            <h3 class="project-title">DSA-Project</h3>
+            <p class="project-desc">
+              Course project focusing on applying core data structures and algorithms to solve practical problems, with careful
+              analysis of time and space complexity for different strategies.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Java</span>
+                  <span>Data Structures</span>
+                  <span>Algorithms</span>
+                </div>
               </div>
-              <div class="project-links">
-                <!--<a href="project-ai-generator.html" class="view-details">View Details</a>-->
-                <a href="https://github.com/FanchonSora/ai-image-generator" target="_blank" class="visit-link">GitHub</a>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Performance &amp; optimization</span>
               </div>
             </div>
-          </div>
-          
-          <!-- Project 7 - Event Management -->
-          <div class="project-card">
-            <div class="project-image">
-              <img src="project7.png" alt="Event Management System">
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/DSA-Project" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
             </div>
-            <div class="project-info">
-              <h3>Event Management Website</h3>
-              <p>For Users use to manage events and track new events from system</p>
-              <div class="project-tags">
-                <span class="project-tag">Typescript</span>
-                <span class="project-tag">Fullstack</span>
-                <span class="project-tag">Website</span>
+          </article>
+
+          <!-- AI-Project -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-brain"></i> Machine Learning</span>
+              <span class="pill-status">Practice</span>
+            </div>
+            <h3 class="project-title">AI-Project</h3>
+            <p class="project-desc">
+              A basic model for classification cosmological objects. This project for learning the basics of machine learning and deep learning classification tasks.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>PyTorch / Sklearn</span>
+                  <span>Jupyter</span>
+                </div>
               </div>
-              <div class="project-links">
-                <!--<a href="project-smart-home.html" class="view-details">View Details</a>-->
-                <a href="event-management-dun.vercel.app" target="_blank" class="visit-link">Live Demo</a>
+              <div class="meta-group">
+                <span class="meta-label">Topics</span>
+                <span class="meta-value">Classification &amp; training loops</span>
               </div>
             </div>
-          </div>
-          
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/AI-Project" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- EMNIST-test -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-pen-nib"></i> Computer Vision</span>
+              <span class="pill-status">Research</span>
+            </div>
+            <h3 class="project-title">EMNIST-test</h3>
+            <p class="project-desc">
+              Experiments on the EMNIST dataset for handwritten character recognition, testing different model variants and
+              augmentation strategies for better accuracy.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>PyTorch</span>
+                  <span>Computer Vision</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Domain</span>
+                <span class="meta-value">Handwriting recognition</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/EMNIST-test" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Faces-Emotions -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-smile"></i> Desktop App</span>
+              <span class="pill-status">Experiment</span>
+            </div>
+            <h3 class="project-title">Faces-Emotions</h3>
+            <p class="project-desc">
+              Face emotion detection prototype combining classical computer vision with C# tooling to explore real‑time emotion
+              recognition to control player actions in a game.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>C#</span>
+                  <span>Computer Vision</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Use case</span>
+                <span class="meta-value">Real‑time emotion analysis</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/Faces-Emotions" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- thesis-project -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-layer-group"></i> Research</span>
+              <span class="pill-status">Thesis Work</span>
+            </div>
+            <h3 class="project-title">thesis-project</h3>
+            <p class="project-desc">
+              Core repository for my thesis, exploring deep learning approaches for image reconstruction and visual synthesis.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>Deep Learning</span>
+                  <span>Computer Vision</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Image inpainting &amp; synthesis</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/thesis-project" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Hole-Filling-Model -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-fill-drip"></i> Research</span>
+              <span class="pill-status">Experiment</span>
+            </div>
+            <h3 class="project-title">Hole-Filling-Model</h3>
+            <p class="project-desc">
+              Model‑focused repository for testing different architectures and loss functions for image hole‑filling tasks.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>PyTorch</span>
+                  <span>Image Inpainting</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Model architecture &amp; training</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/Hole-Filling-Model" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- synthesis-model-thesis -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-images"></i> Research</span>
+              <span class="pill-status">Experiment</span>
+            </div>
+            <h3 class="project-title">synthesis-model-thesis</h3>
+            <p class="project-desc">
+              Companion repository for my thesis, experimenting with generative models for realistic image synthesis from learned
+              representations.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>Generative Models</span>
+                  <span>Deep Learning</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Image synthesis</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/synthesis-model-thesis" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Game-Management-System -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-gamepad"></i> Application</span>
+              <span class="pill-status">Team Project</span>
+            </div>
+            <h3 class="project-title">Game-Management-System</h3>
+            <p class="project-desc">
+              System to manage games, codes and user profiles with features like friend lists and basic marketplace flows.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Java</span>
+                  <span>SQL</span>
+                  <span>OOP</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Frontend design</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/Game-Management-System" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- Finantasy -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-dragon"></i> Game</span>
+              <span class="pill-status">Personal</span>
+            </div>
+            <h3 class="project-title">Finantasy</h3>
+            <p class="project-desc">
+              Strategy game built in Java with quests and combat, used to practice object‑oriented design for complex game logic.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Java</span>
+                  <span>OOP</span>
+                  <span>Game Logic</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Gameplay &amp; architecture</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/Finantasy" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- netflix-clone -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-film"></i> Web App</span>
+              <span class="pill-status">Self‑learning</span>
+            </div>
+            <h3 class="project-title">netflix-clone</h3>
+            <p class="project-desc">
+              Web application inspired by Netflix and MangaDex with streaming, TMDB‑based search and personalized watch history.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>MERN</span>
+                  <span>Microservices</span>
+                  <span>TailwindCSS</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Full‑stack architecture</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/netflix-clone" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- flood-prediction-chatbot  -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-magic"></i> AI Hackathon</span>
+              <span class="pill-status">Experiment</span>
+            </div>
+            <h3 class="project-title">flood-prediction-chatbot</h3>
+            <p class="project-desc">
+              The chatbot can identify flooded routes based on user queries. It highlights these points directly on a map interface.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>ML</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">AI‑driven chatbot</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/flood-prediction-chatbot" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
+
+          <!-- DIP-Lab -->
+          <article class="project-card">
+            <div class="project-pill">
+              <span class="pill-type"><i class="fas fa-microscope"></i> Lab</span>
+              <span class="pill-status">Coursework</span>
+            </div>
+            <h3 class="project-title">DIP-Lab</h3>
+            <p class="project-desc">
+              Digital Image Processing lab repository with different filters, transformations and experiments on visual data.
+            </p>
+            <div class="project-meta">
+              <div class="meta-group">
+                <span class="meta-label">Tech stack</span>
+                <div class="meta-tags">
+                  <span>Python</span>
+                  <span>OpenCV</span>
+                  <span>Image Processing</span>
+                </div>
+              </div>
+              <div class="meta-group">
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Learning DIP concepts</span>
+              </div>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/FanchonSora/DIP-Lab" target="_blank" class="link-primary">
+                <i class="fab fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-  </main> 
-  
-  <footer> 
-    <div class="container"> 
-      <div class="footer-content"> 
-        <div class="footer-section"> 
-          <h3>About Me</h3> 
-          <p>Junior Machine Learning Developer passionate about creating innovative solutions and learning new technologies.</p> 
-          <div class="social-links"> 
-            <a href="https://github.com/FanchonSora" target="_blank"><i class="fab fa-github"></i></a> 
-            <a href="https://www.linkedin.com/in/fanchonsora/" target="_blank"><i class="fab fa-linkedin"></i></a> 
-            <a href="mailto:khanhngan1491@com"><i class="fas fa-envelope"></i></a> 
-          </div> 
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <p>Machine Learning &amp; Software Engineer who enjoys building practical systems, visual tools and playful experiments.</p>
         </div>
         <div class="footer-section">
-          <h3>Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h3>Contact Info</h3>
-          <p><i class="fas fa-map-marker-alt"></i> Origami S10.05, Nguyen Xien Street, Ho Chi Minh City</p>
-          <p><i class="fas fa-phone"></i> (+84) 399201545</p>
-          <p><i class="fas fa-envelope"></i> khanhngan1491@com</p>
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://github.com/FanchonSora" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fanchonsora/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:khanhngan1491@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
         </div>
       </div>
-      
       <div class="copyright">
         <p>&copy; 2025 Nguyễn Đình Khánh Ngân. All rights reserved.</p>
       </div>
     </div>
-  </footer> 
-</body> 
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.innerHTML = navMenu.classList.contains('active')
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close menu when clicking on a nav link (mobile)
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navMenu.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+  </script>
+</body>
 </html>

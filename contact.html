@@ -3,81 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Me</title>
-  <meta name="description" content="Contact form to reach me">
+  <title>Contact | Nguyễn Đình Khánh Ngân</title>
+  <meta name="description" content="Contact and social links of Nguyễn Đình Khánh Ngân">
+  <link rel="icon" type="image/x-icon" href="./cat-icon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="contact.css">
 </head>
 <body>
   <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="frame.html">Frame Demo</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <h1><a href="index.html" class="logo">Khánh Ngân</a></h1>
+      <button class="mobile-menu-btn" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="frame.html">Frame Demo</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <form action="submit_form.php" method="post">
-        <!-- Text input -->
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required>
+    <section class="contact-hero">
+      <div class="container">
+        <h2>Let&rsquo;s Connect</h2>
+        <p>
+          You can reach me quickly through the platforms below.  
+          Feel free to say hi, discuss a project, or connect professionally.
+        </p>
+      </div>
+    </section>
 
-        <!-- Email input -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+    <section class="contact-links">
+      <div class="container">
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:khanhngan1491@gmail.com">
+            <div class="icon-wrapper email">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>Send me an email and I&rsquo;ll get back to you soon.</p>
+            <span class="contact-meta">khanhngan1491@gmail.com</span>
+          </a>
 
-        <!-- Password input -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+          <a class="contact-card" href="https://github.com/FanchonSora" target="_blank" rel="noopener">
+            <div class="icon-wrapper github">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p>Explore my open-source projects and experiment repositories.</p>
+            <span class="contact-meta">github.com/FanchonSora</span>
+          </a>
 
-        <!-- Radio buttons -->
-        <fieldset>
-          <legend>Gender:</legend>
-          <label><input type="radio" name="gender" value="male"> Male</label>
-          <label><input type="radio" name="gender" value="female"> Female</label>
-          <label><input type="radio" name="gender" value="other"> Other</label>
-        </fieldset>
+          <a class="contact-card" href="https://www.linkedin.com/in/fanchonsora/" target="_blank" rel="noopener">
+            <div class="icon-wrapper linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Connect for professional opportunities, networking, and collaboration.</p>
+            <span class="contact-meta">linkedin.com/in/fanchonsora</span>
+          </a>
 
-        <!-- Checkboxes -->
-        <fieldset>
-          <legend>Interests:</legend>
-          <label><input type="checkbox" name="interests" value="coding"> Coding</label>
-          <label><input type="checkbox" name="interests" value="design"> Design</label>
-          <label><input type="checkbox" name="interests" value="music"> Music</label>
-        </fieldset>
+          <a class="contact-card" href="https://devpost.com/FanchonSora" target="_blank" rel="noopener">
+            <div class="icon-wrapper devpost">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3>Devpost</h3>
+            <p>See my hackathon projects and experiment ideas.</p>
+            <span class="contact-meta">devpost.com/FanchonSora</span>
+          </a>
 
-        <!-- Dropdown select -->
-        <label for="country">Country:</label>
-        <select id="country" name="country">
-          <option value="vietnam">Vietnam</option>
-          <option value="usa">USA</option>
-          <option value="uk">UK</option>
-        </select>
+          <a class="contact-card" href="https://fanchonsora.github.io" target="_blank" rel="noopener">
+            <div class="icon-wrapper website">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Personal Website</h3>
+            <p>View my main portfolio and latest updates.</p>
+            <span class="contact-meta">fanchonsora.github.io</span>
+          </a>
 
-        <!-- Textarea -->
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" cols="30" placeholder="Your message here..."></textarea>
-
-        <!-- Submit button -->
-        <button type="submit">Submit</button>
-      </form>
+          <a class="contact-card" href="https://www.instagram.com/fanchon_sora/" target="_blank" rel="noopener">
+            <div class="icon-wrapper instagram">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <h3>Instagram</h3>
+            <p>Follow me on Instagram for personal updates and random thoughts.</p>
+            <span class="contact-meta">instagram.com/fanchon_sora</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
-  <!-- <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Nguyễn Đình Khánh Ngân</p>
-      <p>
-        <a href="https://github.com/FanchonSora">GitHub</a> |
-        <a href="https://www.linkedin.com/in/fanchonsora/">LinkedIn</a> |
-        <a href="mailto:khanhngan1491@com">Email</a>
-      </p>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About</h3>
+          <p>Machine Learning &amp; Software Engineer who enjoys building practical systems, visual tools and playful experiments.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://github.com/FanchonSora" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/fanchonsora/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:khanhngan1491@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Nguyễn Đình Khánh Ngân. All rights reserved.</p>
+      </div>
     </div>
-  </footer> -->
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      menuToggle.innerHTML = navMenu.classList.contains('active')
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close menu when clicking on a nav link (mobile)
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navMenu.classList.remove('active');
+          menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
